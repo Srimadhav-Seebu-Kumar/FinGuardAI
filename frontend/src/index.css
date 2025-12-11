@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f3f4f8;
+  color: #111827;
+}
+
+.app-root {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 260px;
+  background: #020617;
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #111827;
+}
+
+.sidebar-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+}
+
+.sidebar-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.sidebar-menu {
+  padding: 16px 0;
+  flex: 1;
+}
+
+.sidebar-item {
+  padding: 10px 24px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #9ca3af;
+}
+
+.sidebar-item.active,
+.sidebar-item:hover {
+  background: rgba(148, 163, 184, 0.16);
+  color: #f9fafb;
+}
+
+.sidebar-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #111827;
+  font-size: 13px;
+}
+
+/* CONTENT */
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  height: 64px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-search {
+  background: #f3f4f6;
+  border-radius: 999px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+}
+
+.badge-online {
+  background: #ecfdf5;
+  color: #16a34a;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.main-content {
+  padding: 20px 24px 32px;
+}
+
+/* Cards & Layout */
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  border: 1px solid #e5e7eb;
+}
+
+/* Stat card */
+
+.stat-title {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.stat-sub {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Table */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table thead {
+  color: #6b7280;
+}
+
+.table th,
+.table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table tr:hover {
+  background: #f9fafb;
+}
+
+/* Risk tags */
+
+.risk-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.risk-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  margin-right: 5px;
+}
+
+/* Buttons */
+
+.btn {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.btn-primary {
+  background: #0f766e;
+  color: #ecfeff;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+/* Small helper */
+
+.text-muted {
+  color: #6b7280;
+  font-size: 12px;
+}

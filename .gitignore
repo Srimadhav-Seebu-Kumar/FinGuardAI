@@ -1,0 +1,83 @@
+################################
+# OS / Editor junk
+################################
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.log
+
+################################
+# Python cache
+################################
+__pycache__/
+*.py[cod]
+*.pyd
+.mypy_cache/
+.pytype/
+.pyre/
+
+################################
+# Virtual environments
+################################
+venv/
+env/
+ENV/
+.venv/
+
+################################
+# Environment variables
+################################
+*.env
+.env.*
+secret.key
+
+################################
+# BACKEND
+################################
+
+# Models SHOULD be committed
+# DO NOT ignore backend/models/
+
+# Ignore training datasets except these:
+*.csv
+!backend/sample_data.csv
+!backend/sample_data_100k_labelled.csv
+!backend/test_data_100.csv
+
+# Ignore backend temp folders
+backend/logs/
+backend/data/
+backend/datasets/
+
+################################
+# FRONTEND (React + Vite)
+################################
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.cache/
+
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+frontend/.env
+frontend/.env.*
+
+################################
+# IDE settings
+################################
+.vscode/
+.idea/
+*.iml
+
+################################
+# Allow source code
+################################
+!backend/**/*.py
+!frontend/src/**
+!frontend/index.html
+!frontend/vite.config.js
+!frontend/package.json
+!frontend/package-lock.json
