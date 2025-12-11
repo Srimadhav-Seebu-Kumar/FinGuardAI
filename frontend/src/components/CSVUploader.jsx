@@ -2,7 +2,7 @@ import { useState } from "react";
 import Papa from "papaparse";
 import axios from "axios";
 
-const API_BASE = "surprising-essence-production.up.railway.app";
+const API_BASE = "https://surprising-essence-production.up.railway.app";
 
 export default function CSVUploader({ onResults }) {
   const [loading, setLoading] = useState(false);
